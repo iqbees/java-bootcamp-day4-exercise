@@ -39,12 +39,16 @@ public class Main {
         System.out.print("Enter a number to get its factorial: ");
         int num = in.nextInt();
 
-        int factorial = 1;
-        for (int i = 1; i <= num; i++) {
-            factorial = factorial * i;
+        if (num < 0) {
+            System.out.println("Please enter a positive number")
+        } else {
+            int factorial = 1;
+            for (int i = 1; i <= num; i++) {
+                factorial = factorial * i;
+            }
+    
+            System.out.println("Factorial: " + factorial);
         }
-
-        System.out.println("Factorial: " + factorial);
 
         // 4.Two numbers are entered through the keyboard. Write a program to find the value of one number raised to the power of another. (Do not use Java built-in method)
 
